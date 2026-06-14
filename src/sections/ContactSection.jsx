@@ -144,9 +144,16 @@ export default function ContactSection() {
 
         {/* Footer */}
         <div className="mt-20 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-slate-400 text-[10px] font-bold font-mono tracking-wide">
-            © {new Date().getFullYear()} BOCHIBLOX. ALL RIGHTS RESERVED.
-          </p>
+          <div className="flex items-center gap-2 group cursor-default">
+            <img 
+              src="/logo.png" 
+              alt="BOCHIBLOX Logo" 
+              className="h-5 w-auto object-contain transition-transform duration-300 group-hover:scale-110" 
+            />
+            <p className="text-slate-400 text-[10px] font-bold font-mono tracking-wide">
+              © {new Date().getFullYear()} ReactAja. ALL RIGHTS RESERVED.
+            </p>
+          </div>
           <div className="flex gap-4">
             <span className="text-slate-400 text-[10px] font-bold font-mono">React + Tailwind + Framer Motion</span>
           </div>
